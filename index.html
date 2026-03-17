@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tief POS · by Cwanda</title>
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- AOS animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- go to top button -->
+    <button id="goTopBtn" title="Go to top" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></button>
+    <nav class="navbar" data-aos="fade-down">
+      <div class="logo">
+        <span class="tief">tief</span><span class="pos">POS</span>
+        <span class="tieflab">by Tieflab</span>
+      </div>
+      <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+    <!-- hero -->
+    <section class="hero container">
+      <div class="hero-grid">
+        <div data-aos="fade-up">
+          <span class="badge-pill"><i class="fas fa-bolt" style="margin-right:px; color:var(--accent);"></i> control & mobility</span>
+          <h1>Your entire shop.<br>In your pocket.</h1>
+          <p class="hero-desc">Inventory, staff, sales & receipts — real‑time sync, offline ready. Powered by Tieflab infrastructure.</p>
+          <div>
+            <a href="https://tiefpos-v2.lovable.app/" class="btn btn-primary">Try it free <i class="fas fa-arrow-right" style="margin-left: 8px;"></i></a>
+            <a href="#" class="btn btn-outline">Contact us</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item" data-aos="zoom-in" data-aos-delay="200"><h3>ZXing</h3><span>scan core</span></div>
+            <div class="stat-item" data-aos="zoom-in" data-aos-delay="300"><h3>PWA</h3><span>installable</span></div>
+            <div class="stat-item" data-aos="zoom-in" data-aos-delay="400"><h3>+role</h3><span>multi‑user</span></div>
+          </div>
+        </div>
+        <div data-aos="fade-left" data-aos-delay="300" style="background: #181c25; border-radius: 60px; min-height: 320px; border: 1px solid #2f3a4d; display: flex; align-items: center; justify-content: center;">
+          <i class="fas fa-camera" style="font-size: 5rem; color: var(--accent); opacity: 0.4;"></i>
+          <i class="fas fa-qrcode" style="font-size: 4rem; color: var(--accent); margin-left: 20px;"></i>
+        </div>
+      </div>
+    </section>
+    <!--  hybrid cloud section - redesigned modern, powered by cwanda + tieflab  -->
+    <section class="container" id="features">
+      <div class="hybrid-showcase" data-aos="fade-up" data-aos-duration="1000">
+        <div class="hybrid-header">
+          <div class="tieflab-badge">
+            <i class="fas fa-cloud-upload-alt"></i> <span> Tieflab infrastructure</span>
+          </div>
+          <span style="color: var(--text-muted); margin-left: 10px;"><i class="fas fa-bolt" style="color: var(--accent);"></i> powered by Cwanda</span>
+        </div>
+        
+        <div class="hybrid-grid">
+          <!-- left: modern capability list -->
+          <div>
+            <h2 style="font-size: 2.4rem; font-weight: 700; margin-bottom: 30px; color:white;">Hybrid cloud &<br>real‑time edge</h2>
+            <ul class="capability-list-modern">
+              <li>
+                <i class="fas fa-qrcode"></i>
+                <div class="capability-text">
+                  <h4>ZXing smart scan</h4>
+                  <p>Native camera EAN‑13 / UPC / Code128 — instant product lookup, even offline.</p>
+                </div>
+              </li>
+              <li>
+                <i class="fas fa-database"></i>
+                <div class="capability-text">
+                  <h4>Supabase real‑time</h4>
+                  <p>PostgreSQL sync across all devices — inventory, sales, staff actions.</p>
+                </div>
+              </li>
+              <li>
+                <i class="fas fa-chart-line"></i>
+                <div class="capability-text">
+                  <h4>Recharts analytics</h4>
+                  <p>Dynamic daily revenue, top products, custom date filtering.</p>
+                </div>
+              </li>
+              <li>
+                <i class="fas fa-lock"></i>
+                <div class="capability-text">
+                  <h4>Auth & OTP</h4>
+                  <p>Google OAuth, email, 6‑digit OTP — plus granular roles: admin, manager, cashier.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- right: cwanda / tieflab special card -->
+          <div class="powered-cwanda">
+            <div class="cwanda-logo">Cwanda <small>by Tieflab</small></div>
+            <p style="color:#b1c0da; margin-bottom: 30px;">Centralized service management meets POS — IoT‑ready infrastructure.</p>
+            <div class="cwanda-feature">
+              <div class="cwanda-feature-item">
+                <i class="fas fa-fingerprint" style="color: var(--accent); font-size: 2rem;"></i>
+                <div><strong>RFID / fingerprint</strong><br> <span style="color:#94a3b8;">attendance & staff check‑in</span></div>
+              </div>
+              <div class="cwanda-feature-item">
+                <i class="fas fa-microchip" style="color: var(--accent); font-size: 2rem;"></i>
+                <div><strong>ESP32/8266 ready</strong><br> <span style="color:#94a3b8;">IoT hardware integration</span></div>
+              </div>
+            </div>
+            <hr style="border-color:#344458; margin: 30px 0 20px;">
+            <p style="font-size:0.95rem;"><i class="fas fa-check-circle" style="color:var(--accent);"></i> &nbsp; part of Tieflab ecosystem — cwanda attendance & tief POS unified</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- user experience (dark/light, adaptive) -->
+    <section style="background: #181c25; padding: 80px 0; margin: 40px 0;">
+      <div class="container">
+        <div style="text-align: center;">
+          <span class="badge-pill">✨ adaptive UI · dark mode native</span>
+          <h2 class="section-title">Experience that transforms</h2>
+          <p class="section-sub" style="margin-left: auto; margin-right: auto;">Dense desktop · thumb‑first mobile · PWA</p>
+        </div>
+        <div class="ux-showcase">
+          <div class="ux-card" data-aos="zoom-in"><i class="fas fa-moon"></i> <h4>Dark / light</h4> <p>High‑contrast Shadcn UI, bg #0f1219 & accent #f9a91f.</p></div>
+          <div class="ux-card" data-aos="zoom-in" data-aos-delay="100"><i class="fas fa-mobile-alt"></i> <h4>PWA ready</h4> <p>Installable, offline cache, native camera access.</p></div>
+          <div class="ux-card" data-aos="zoom-in" data-aos-delay="200"><i class="fas fa-paint-brush"></i> <h4>White‑label</h4> <p>Shop logo, avatars, custom receipt branding.</p></div>
+        </div>
+      </div>
+    </section>
+    <!-- steps -->
+    <section class="container" style="margin: 80px auto;">
+      <div data-aos="fade-up">
+        <span class="badge-pill"><i class="fas fa-compass"></i> from setup to insight</span>
+        <h2 class="section-title">Three steps to transform your shop</h2>
+      </div>
+      <div class="feature-grid" style="margin-top: 48px;">
+        <div class="feature-card" data-aos="fade-right"><div class="feature-icon"><i class="fas fa-camera-retro"></i></div><h3>1. Connect & scan</h3><p>ZXing camera or bulk import, real‑time Supabase sync.</p></div>
+        <div class="feature-card" data-aos="fade-up"><div class="feature-icon"><i class="fas fa-user-plus"></i></div><h3>2. Invite your team</h3><p>Register brand, invite cashiers with OTP / OAuth, granular roles.</p></div>
+        <div class="feature-card" data-aos="fade-left"><div class="feature-icon"><i class="fas fa-chart-pie"></i></div><h3>3. Track & analyze</h3><p>Dashboard with daily revenue, top products, PDF receipts.</p></div>
+      </div>
+    </section>
+    <!-- pricing -->
+    <section class="container" id="pricing" data-aos="fade-up">
+      <div style="text-align: center;">
+        <span class="badge-pill">choose your plan</span>
+        <h2 class="section-title">Simple, transparent pricing</h2>
+        <p class="section-sub" style="margin-left: auto; margin-right: auto;">monthly · yearly — all include core security & analytics</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="plan" data-aos="flip-left"><h4>Basic</h4><div class="price">$15 <small>/mo</small></div><ul style="margin:30px 0; list-style:none;"><li><i class="fas fa-check" style="color:#f9a91f;"></i> 100 products</li><li><i class="fas fa-check" style="color:#f9a91f;"></i> 1 cashier + admin</li><li><i class="fas fa-check" style="color:#f9a91f;"></i> Basic analytics</li></ul><a href="https://tiefpos-v2.lovable.app/" class="btn btn-outline" style="width:100%;">Start free</a></div>
+        <div class="plan popular" data-aos="flip-up"><h4>Professional</h4><div class="price">$69 <small>/mo</small></div><ul style="margin:30px 0; list-style:none;"><li><i class="fas fa-check" style="color:#f9a91f;"></i> 1,000 products</li><li><i class="fas fa-check" style="color:#f9a91f;"></i> 5 staff (manager)</li><li><i class="fas fa-check" style="color:#f9a91f;"></i> Recharts dashboard</li></ul><a href="https://tiefpos-v2.lovable.app/" class="btn btn-primary" style="width:100%;">Get started</a></div>
+        <div class="plan" data-aos="flip-right"><h4>Enterprise</h4><div class="price">$199 <small>/mo</small></div><ul style="margin:30px 0; list-style:none;"><li><i class="fas fa-check" style="color:#f9a91f;"></i> Unlimited products</li><li><i class="fas fa-check" style="color:#f9a91f;"></i> Multi‑admin & roles</li><li><i class="fas fa-check" style="color:#f9a91f;"></i> 24/7 support + SLA</li></ul><a href="https://tiefpos-v2.lovable.app/" class="btn btn-outline" style="width:100%;">Contact sales</a></div>
+      </div>
+    </section>
+    <!-- footer / contact (with tieflab address) -->
+    <footer class="footer" id="contact">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <h3 style="color:white; font-size: 2rem;">tief<span style="color:var(--accent);">POS</span></h3>
+            <p style="margin: 20px 0;"><i class="fas fa-map-pin" style="color:var(--accent); width: 24px;"></i> 551 Street, ▱tieflab▰, 18 KG 551 St, Kigali</p>
+            <p><i class="fas fa-phone-alt" style="color:var(--accent); width: 24px;"></i> +(250) 785-762-690</p>
+            <p><i class="fas fa-envelope" style="color:var(--accent); width: 24px;"></i> info@tiefpos.com</p>
+          </div>
+          <div>
+            <h4 style="color:white; margin-bottom: 20px;">Follow us</h4>
+            <div class="social-links">
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+              <a href="#" aria-label="Twitter / X"><i class="fab fa-x-twitter"></i></a>
+            </div>
+            <p style="margin-top: 30px; color: #7c8aa3;"><i class="fas fa-clock" style="color:var(--accent);"></i> Mon-Fri 9am – 5pm</p>
+          </div>
+          <div>
+            <h4 style="color:white; margin-bottom: 20px;">Tieflab ecosystem</h4>
+            <p style="color:#a1b1cd;">Cwanda · tiefPOS · IoT hardware</p>
+          </div>
+        </div>
+        <hr style="border-color:#262e3c; margin: 40px 0 20px;">
+        <p style="text-align: center; color:#7c8aa3;">© 2025 tiefPOS — a Tieflab company. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init({ duration: 800, offset: 20, once: false });
+    // Go to top button logic
+    const goTopBtn = document.getElementById('goTopBtn');
+    
+    window.addEventListener('scroll', () => {
+    if (window.scrollY > 500) {
+    goTopBtn.classList.add('visible');
+    } else {
+    goTopBtn.classList.remove('visible');
+    }
+    });
+    goTopBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    </script>
+  </body>
+</html>
